@@ -29,7 +29,7 @@ hi def link     blinkDeclDerivative Special
 
 
 syn region      blinkComment        start="#" end="$" contains=@Spell
-syn match       blinkAnnotation     '@\p\+="\p*"'
+syn match       blinkAnnotation     '@\p\+=\(\("\p*"\|\'\p*\'\)\_s*\)\+'
 
 hi def link     blinkComment        Comment
 hi def link     blinkAnnotation     Comment
